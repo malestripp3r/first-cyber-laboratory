@@ -36,7 +36,7 @@ Ce laboratoire vise à reproduire une petite infrastructure d'entreprise afin de
                                           |
                                      corp.test
 
-                              WAZUH01 (en cours)
+                              WAZUH01
                                10.10.30.30
 ```
 
@@ -87,7 +87,7 @@ Ce laboratoire vise à reproduire une petite infrastructure d'entreprise afin de
 - [x] GPO de sécurité
 - [x] Audit Windows
 - [x] Sysmon
-- [ ] Wazuh
+- [x] Wazuh
 - [ ] Agent Wazuh sur Windows
 - [ ] Centralisation Security / PowerShell / Sysmon
 - [ ] Kali Linux
