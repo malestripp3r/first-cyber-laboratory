@@ -88,8 +88,8 @@ Ce laboratoire vise à reproduire une petite infrastructure d'entreprise afin de
 - [x] Audit Windows
 - [x] Sysmon
 - [x] Wazuh
-- [ ] Agent Wazuh sur Windows
-- [ ] Centralisation Security / PowerShell / Sysmon
+- [x] Agent Wazuh sur Windows
+- [x] Centralisation Security / PowerShell / Sysmon
 - [ ] Kali Linux
 - [ ] Réseau ATTACK
 - [ ] DMZ
