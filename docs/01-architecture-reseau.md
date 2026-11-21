@@ -16,8 +16,6 @@ Le laboratoire sera déployé sur mon ordinateur personnel utilisant VirtualBox.
 ## 3. Segmentation réseau
 L'infrastructure sera organisée en plusieurs zones réseau ayant chacune une fonction spécifique.
 
-L'infrastructure sera organisée en plusieurs zones réseau ayant chacune une fonction spécifique.
-
 USERS : réseau destiné aux postes utilisateurs, notamment les machines Windows 11 intégrées au domaine Active Directory.
 
 SERVERS : réseau hébergeant les serveurs de l'entreprise, notamment le contrôleur de domaine Active Directory et les services DNS.
