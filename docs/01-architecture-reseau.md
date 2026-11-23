@@ -39,3 +39,22 @@ Le plan d'adressage suivant a été défini pour l'infrastructure :
 | ATTACK | 10.10.50.0/24 | 10.10.50.1 |
 
 
+## 5. Machines virtuelles
+| __Machine | Système d'exploitation | Adresse IP | Rôle__ |
+|---|---|---|---|
+| FW01 | OPNsense 26.7 | 10.10.10.1 / 10.10.20.1 / 10.10.30.1 | Pare-feu et routage inter-réseaux |
+| DC01 | Windows Server 2025 | 10.10.20.10 | Contrôleur de domaine AD DS et DNS |
+| WIN11-01 | Windows 11 | 10.10.10.x | Poste utilisateur du domaine |
+| WAZUH01 | Ubuntu 24.04 LTS | 10.10.30.10 | SIEM Wazuh : Manager, Indexer et Dashboard |
+
+## 6.Communication et filtrage
+Le pare-feu OPNsense assure le routage entre les différents réseaux du laboratoire. Les communications sont limitées à l'aide de règles de filtrage afin d'éviter qu'une machine puisse accéder librement à toutes les zones de l'infrastructure.
+
+## 7.Tests et résultats
+Plusieurs tests ont été réalisés afin de vérifier le bon fonctionnement de l'infrastructure réseau.
+
+Les tests de connectivité ont permis de confirmer la communication entre les machines et leurs passerelles. Les règles du pare-feu OPNsense ont également été vérifiées afin de s'assurer que les communications autorisées fonctionnent et que les accès non autorisés sont bloqués.
+
+La résolution DNS, l'intégration de Windows 11 au domaine Active Directory ainsi que l'accès au Dashboard Wazuh ont été validés.
+
+
