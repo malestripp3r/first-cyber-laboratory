@@ -37,3 +37,5 @@ Ce dépôt GitHub servira à documenter les différentes étapes du projet, les 
 
 - Scripting : Python, PowerShell, Bash
 
+<img width="2880" height="1860" alt="architecture-homelab-sans-legende" src="https://github.com/user-attachments/assets/b9859ffe-07ac-4db9-a92f-000cb0f2932c" />
+
