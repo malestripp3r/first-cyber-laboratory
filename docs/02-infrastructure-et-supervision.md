@@ -19,6 +19,17 @@ La machine WIN11-01 a ensuite été intégrée au domaine afin de tester l'authe
 ## 3.Sécurité et journalisation Windows
 Des stratégies de groupe (GPO) ont été configurées pour renforcer la sécurité et améliorer la traçabilité des activités sur les postes Windows.
 
+### Stratégies de groupe (GPO)
+
+Deux GPO ont été mises en place pour améliorer la sécurité et la traçabilité des activités des postes de travail :
+
+| GPO | Configuration |
+|---|---|
+| GPO-Workstations-Security | Verrouillage automatique des sessions après 900 secondes d'inactivité |
+| GPO-Workstations-Auditing | Audit des connexions, des créations de processus et journalisation PowerShell |
+
+Ces stratégies permettent d'appliquer des paramètres de sécurité de manière centralisée sur les machines concernées du domaine.
+
 L'outil Sysmon a également été installé sur WIN11-01 afin de collecter des informations supplémentaires sur les activités du système, notamment l'exécution de processus et certaines connexions réseau.
 
 ## 4.Supervision avec Wazuh
@@ -30,6 +41,22 @@ Un agent Wazuh a été configuré sur WIN11-01 pour transmettre les journaux Win
 
 Le Dashboard Wazuh permet de centraliser les événements, de consulter les alertes de sécurité et d'effectuer des recherches sur les activités des machines surveillées.
 <img width="1006" height="426" alt="image" src="https://github.com/user-attachments/assets/e5b9e623-fae6-4400-bd1e-945bf2d06f0e" />
+
+### Sources de journalisation
+
+| Source | Event ID | Informations collectées |
+|---|---|---|
+| Windows Security | 4625 | Échecs d'authentification |
+| Windows Security | 4688 | Créations de processus |
+| Sysmon | 1 | Créations de processus et lignes de commande |
+| Sysmon | 3 | Connexions réseau des processus sélectionnés |
+| Sysmon | 11 | Créations de fichiers surveillées |
+| PowerShell | 4104 | Contenu des blocs de script exécutés |
+
+Les événements sont transmis par l'agent Wazuh installé sur WIN11-01 et analysés par le Wazuh Manager.
+
+Les alertes générées sont consultables dans Threat Hunting, où il est possible de filtrer les événements par machine, identifiant et règle de détection.
+
 
 
 ## 5.Tests et résultats
