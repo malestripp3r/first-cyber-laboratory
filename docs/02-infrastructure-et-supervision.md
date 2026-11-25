@@ -37,7 +37,7 @@ Un serveur WAZUH01 a été déployé sous Ubuntu 24.04 LTS dans le réseau SOC.
 
 Wazuh a été installé avec ses trois composants principaux : Manager, Indexer et Dashboard.
 
-Un agent Wazuh a été configuré sur WIN11-01 pour transmettre les journaux Windows Security, Sysmon et PowerShell vers le SIEM.
+Un agent Wazuh a été configuré sur DC01 et WIN11-01 pour transmettre les journaux Windows Security, Sysmon et PowerShell vers le SIEM.
 
 Le Dashboard Wazuh permet de centraliser les événements, de consulter les alertes de sécurité et d'effectuer des recherches sur les activités des machines surveillées.
 <img width="1006" height="426" alt="image" src="https://github.com/user-attachments/assets/e5b9e623-fae6-4400-bd1e-945bf2d06f0e" />
