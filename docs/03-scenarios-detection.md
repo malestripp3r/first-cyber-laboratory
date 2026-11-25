@@ -107,6 +107,7 @@ Créer une règle personnalisée capable de détecter un marqueur spécifique da
 ### Configuration
 
 Une règle locale a été ajoutée au fichier `/var/ossec/etc/rules/local_rules.xml` sur WAZUH01.
+<img width="1000" height="190" alt="image" src="https://github.com/user-attachments/assets/4017e1f4-68b7-4943-ab26-fb96e1d643ad" />
 
 La règle utilise l'identifiant `100110`, le niveau `5` et recherche la chaîne `SOC-LAB-CUSTOM-RULE` dans le contenu des blocs de script PowerShell.
 
