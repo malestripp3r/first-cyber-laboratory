@@ -40,7 +40,7 @@ Le plan d'adressage suivant a été défini pour l'infrastructure :
 
 
 ## 5. Machines virtuelles
-| __Machine | Système d'exploitation | Adresse IP | Rôle__ |
+| Machine | Système d'exploitation | Adresse IP | Rôle |
 |---|---|---|---|
 | FW01 | OPNsense 26.7 | 10.10.10.1 / 10.10.20.1 / 10.10.30.1 | Pare-feu et routage inter-réseaux |
 | DC01 | Windows Server 2025 | 10.10.20.10 | Contrôleur de domaine AD DS et DNS |
