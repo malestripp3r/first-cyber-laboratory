@@ -44,7 +44,7 @@ Le plan d'adressage suivant a été défini pour l'infrastructure :
 |---|---|---|---|
 | FW01 | OPNsense 26.7 | 10.10.10.1 / 10.10.20.1 / 10.10.30.1 | Pare-feu et routage inter-réseaux |
 | DC01 | Windows Server 2025 | 10.10.20.10 | Contrôleur de domaine AD DS et DNS |
-| WIN11-01 | Windows 11 | 10.10.10.x | Poste utilisateur du domaine |
+| WIN11-01 | Windows 11 | 10.10.10.130 | Poste utilisateur du domaine |
 | WAZUH01 | Ubuntu 24.04 LTS | 10.10.30.10 | SIEM Wazuh : Manager, Indexer et Dashboard |
 
 ## 6.Communication et filtrage
