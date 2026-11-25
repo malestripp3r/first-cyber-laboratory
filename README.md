@@ -44,3 +44,11 @@ Ce dépôt GitHub servira à documenter les différentes étapes du projet, les 
 - Automatisation avec Python, PowerShell et Bash
 <img width="2880" height="1860" alt="architecture-homelab-sans-legende" src="https://github.com/user-attachments/assets/b9859ffe-07ac-4db9-a92f-000cb0f2932c" />
 
+
+## Documentation
+
+- [Architecture réseau](docs/01-architecture-reseau.md)
+- [Infrastructure Windows et supervision](docs/02-infrastructure-et-supervision.md)
+- [Scénarios de détection SOC](docs/03-scenarios-detection.md)
+- [Surveillance Active Directory et Kerberos](docs/04-surveillance-active-directory.md)
+
