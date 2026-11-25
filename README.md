@@ -25,17 +25,22 @@ Ce dépôt GitHub servira à documenter les différentes étapes du projet, les 
 
 - Automatiser certaines tâches avec des scripts.
 
-## Technologies prévues
+## Technologies utilisées
 
 - Virtualisation : VirtualBox
+- Pare-feu et segmentation : OPNsense
+- Systèmes : Windows Server 2025, Windows 11, Ubuntu 24.04 LTS
+- Services : Active Directory Domain Services, DNS, GPO
+- Journalisation : Windows Event Logs, Sysmon, PowerShell Script Block Logging
+- SIEM : Wazuh (Manager, Indexer, Dashboard et agent Windows)
 
-- Systèmes : Windows Server, Windows 11, Ubuntu Server, Kali Linux
 
-- Réseau : OPNsense
+## Technologies et travaux prévus
 
-- Supervision et sécurité : Wazuh, Sysmon, Suricata
-
-- Scripting : Python, PowerShell, Bash
-
+- Kali Linux pour les simulations d'attaques
+- Suricata pour la détection réseau
+- Détection avancée des menaces
+- Investigation et réponse aux incidents
+- Automatisation avec Python, PowerShell et Bash
 <img width="2880" height="1860" alt="architecture-homelab-sans-legende" src="https://github.com/user-attachments/assets/b9859ffe-07ac-4db9-a92f-000cb0f2932c" />
 
