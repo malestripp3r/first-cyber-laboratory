@@ -28,7 +28,7 @@ ATTACK : réseau réservé à Kali Linux et aux simulations d'attaques.
 
 Le pare-feu OPNsense assurera la communication contrôlée entre les différents réseaux.
 
-## 4.Plan d'adressage IP
+## 4. Plan d'adressage IP
 Le plan d'adressage suivant a été défini pour l'infrastructure :
 | Réseau | Sous-réseau | Passerelle prévue |
 |---|---|---|
@@ -49,6 +49,17 @@ Le plan d'adressage suivant a été défini pour l'infrastructure :
 
 ## 6.Communication et filtrage
 Le pare-feu OPNsense assure le routage entre les différents réseaux du laboratoire. Les communications sont limitées à l'aide de règles de filtrage afin d'éviter qu'une machine puisse accéder librement à toutes les zones de l'infrastructure.
+
+### Principaux flux autorisés
+
+| Source | Destination | Service | Utilité |
+|---|---|---|---|
+| USERS | DC01 (10.10.20.10) | DNS, Kerberos, LDAP, SMB, RPC | Services Active Directory |
+| WIN11-01 | WAZUH01 (10.10.30.10) | TCP 1514/1515 | Communication et enregistrement de l'agent Wazuh |
+| USERS | WAZUH01 (10.10.30.10) | HTTPS 443 | Accès au Dashboard Wazuh |
+| WAZUH01 | DC01 (10.10.20.10) | DNS 53 | Résolution des noms internes |
+
+La segmentation permet de limiter les communications entre les différentes zones. Les accès nécessaires aux services de l'entreprise sont autorisés, tandis que les autres communications internes sont filtrées selon les règles définies dans OPNsense.
 
 ## 7.Tests et résultats
 Plusieurs tests ont été réalisés afin de vérifier le bon fonctionnement de l'infrastructure réseau.
